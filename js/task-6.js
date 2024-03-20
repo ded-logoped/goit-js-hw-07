@@ -12,6 +12,7 @@ const boxes = document.querySelector("#boxes");
 
 function createBoxes() {
   const amount = Number(input.value);
+
   if (amount < 1 || amount > 100) {
     alert("Please enter a number between 1 and 100.");
     return;
@@ -23,7 +24,7 @@ function createBoxes() {
     const boxx = document.createElement("div");
     boxx.style.width = `${size}px`;
     boxx.style.height = `${size}px`;
-    boxx.style.backgroundColor = getRandomHexColor;
+    boxx.style.backgroundColor = getRandomHexColor();
     boxes.appendChild(boxx);
     size += 10;
   }
