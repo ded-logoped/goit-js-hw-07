@@ -5,7 +5,7 @@ userInput.addEventListener("input", () => {
   const noSpaces = userInput.value.trim();
 
   if (noSpaces === "") {
-    userSpan.textContent = "Anonymus";
+    userSpan.textContent = "Anonymous";
   } else {
     userSpan.textContent = noSpaces;
   }
